@@ -1,0 +1,49 @@
+{
+    "base_url": "https://peneraju.org",
+    "url_template": "https://peneraju.org/course-details?id={var_id}",
+    "start_id": 100,
+    "end_id": 105,
+    "fields": [
+        {
+            "name": "Programme Name",
+            "selector": "h5.card-title",
+            "extract": "text"
+        },
+        {
+            "name": "Method",
+            "extract": "generic_label"
+        },
+        {
+            "name": "Duration",
+            "extract": "generic_label"
+        },
+        {
+            "name": "ALTI Name",
+            "extract": "generic_label"
+        },
+        {
+            "name": "Issuer",
+            "extract": "generic_label"
+        },
+        {
+            "name": "Phone",
+            "selector": ".ti-headset",
+            "extract": "parent_text"
+        },
+        {
+            "name": "Email",
+            "selector": "a[href^=\"mailto:\"]",
+            "extract": "attribute",
+            "attribute": "href",
+            "remove_prefix": "mailto:"
+        },
+        {
+            "name": "Web",
+            "selector": ".ti-device-desktop.text-2xl",
+            "extract": "next_tag_attribute",
+            "next_tag": "a",
+            "attribute": "href"
+        }
+    ]
+}
+

@@ -1,0 +1,15 @@
+<div class="md:col-span-6 col-span-12 mb-4">
+            <h5 class="card-title">Professional Certificate in Islamic Finance (Banking)
+            </h5>
+        </div>
+
+
+<div class="course-info-text">
+                    <div class="label">Method</div>
+                    <div class="value">Online</div>
+                </div>
+
+<div class="course-info-text">
+                    <div class="label">Duration</div>
+                    <div class="value">4 Months</div>
+                </div>
